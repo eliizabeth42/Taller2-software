@@ -21,8 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ACWIN7C140
  */
-@WebFilter(filterName = "Login", urlPatterns = {"/HolaMundoServlet"})
-public class Login implements Filter {
+@WebFilter(filterName = "FiltroAutenticacion", urlPatterns = {"/HolaMundoServlet"})
+public class FiltroAutenticacion implements Filter {
     
     private static final boolean debug = true;
     private static final String NOMBRE = "laura";
@@ -33,7 +33,7 @@ public class Login implements Filter {
     // configured. 
     private FilterConfig filterConfig = null;
     
-    public Login() {
+    public FiltroAutenticacion() {
     }    
     
     private void doBeforeProcessing(ServletRequest request, ServletResponse response)

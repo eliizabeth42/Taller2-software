@@ -6,29 +6,16 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Ejercicio Servlet</title>
+        <title>Iniciar Secion</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div>
-            <form method= "POST" action="./EjercicioServlet" >
-                <table>
-                    <tr>
-                        <td>Digite su nombre: </td>
-                        <td> <input name="nombre" placeholder="nombre"/></td>
-                    </tr>
-                     <tr>
-                        <td>Digite su apellido: </td>
-                        <td> <input apellido="apellido" placeholder="apellido"/></td>
-                    </tr>
-                     <tr>
-                        <td>Digite su edad: </td>
-                        <td><input edad="edaad" placeholder="edad"/></td>
-                    </tr>
-                  
-                </table>
-                 <input type="submit" value="Enviar"/>
+            <form action="/Login" method="POST">
+                <input name="nombre" placeholder="nombre"/>
+                <input name="password" placeholder="password"/>
+                <input type="submit" value="Login"/>
             </form>
         </div>
     </body>
