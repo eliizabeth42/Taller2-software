@@ -37,10 +37,11 @@ public class HolaMundoServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet HolaMundoServlet</title>");            
+            out.println("<title>Procesar Informacion</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>HOLAAAA " + request.getParameter("nombre") + "</h1>");
+            String nombre = request.getParameter("nombre");
+            out.println("<h1>Bienvenido(a) " + request.getParameter("nombre") + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -86,3 +87,5 @@ public class HolaMundoServlet extends HttpServlet {
     }// </editor-fold>
 
 }
+
+     
