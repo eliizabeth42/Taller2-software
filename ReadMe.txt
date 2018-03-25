@@ -3,5 +3,3 @@ Participantes:
 - Megan Ibague
 - Elizabeth Castellanos
 
-Usuario: laura
-Contraseña: 123456

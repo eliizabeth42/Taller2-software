@@ -102,8 +102,7 @@ public class FiltroAutenticacion implements Filter {
             FilterChain chain)
             throws IOException, ServletException {
         
-         if (request.getParameter("nombre").equals(NOMBRE)&&
-                 request.getParameter("password").equals(PASS)) {
+         if (request.getParameter("nombre").equals(request.getParameter("password"))) {
                 //((HttpServletResponse)response).sendRedirect("login.html");
                 chain.doFilter(request, response);
                 
