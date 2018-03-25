@@ -18,17 +18,10 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "ProcesarFormulario", urlPatterns = {"/ProcesarFormulario"})
     public class ProcesarFormulario extends HttpServlet{
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-    protected void processRequest(HttpServletRequest req, HttpServletResponse resp)
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
         throws ServletException,IOException{
+        resp.setContentType("text/html;charset=UTF-8");
            try (PrintWriter out = resp.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
